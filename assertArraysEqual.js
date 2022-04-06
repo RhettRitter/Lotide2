@@ -4,6 +4,8 @@ const assertArraysEqual = function(actual,expected) {
     if (actual[i] !== expected[i]) {
       console.log(`🥵️Assertion Failed: ${actual} !== ${expected}`);
     }
+    if (actual[i] !== expected[i]) {
+      console.log(`🤑Assertion Passed: ${actual} === ${expected}`);
+    }
   }
 };
-console.log(`🤑Assertion Passed: ${actual} === ${expected}`);
