@@ -1,8 +1,6 @@
 function tail(array) {
-  let series = [];
-  for (let i = 1; i < array.length; i++) {
-    series.push(i);
-  }
-  return series;
+  return array.slice(1);
 };
+console.log(tail([1,2,3]));
+
 module.exports = tail

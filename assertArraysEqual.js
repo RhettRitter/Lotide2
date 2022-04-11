@@ -1,9 +1,10 @@
 const eqArrays = require('./eqArrays')
-const assertArraysEqual = function(arr1, arr2) {
-  if (eqArrays(arr1, arr2)) {
-    console.log(`🤑🤑🤑 ${arr1} === ${arr2}`);
+const assertArraysEqual = function(array1, array2) {
+  if (eqArrays(array1, array2) === true) {
+    console.log(`🤑🤑🤑 ${array1} === ${array2}`);
   } else {
-    console.log(`🥵️🥵️🥵️ ${arr1} !== ${arr2}`);
+    console.log(`🥵️🥵️🥵️ ${array1} !== ${array2}`);
   }
 };
+
 module.exports = assertArraysEqual
